@@ -2,6 +2,21 @@
    <div class="animals-index">
      <h1>All Animals</h1>
      <p>{{ animals }}</p>
+     <div v-for="animal in animals">
+       <img v-bind:src=" animal['photos'][0]['medium'] ">
+       <ul>
+         <li>{{ animal['photos'][0]['full'] }}</li>
+         <li>Name: {{ animal["name"] }}</li>
+         <li>Type: {{ animal["type"] }}</li>
+         <li>Type: {{ animal["breeds"] }}</li>
+         <li>Age: {{ animal["age"] }}</li>
+         <li>Attributes: {{ animal["attributes"] }}</li>
+         <li>Personality traits: {{ animal["tags"] }}</li>
+         <li>Type: {{ animal["age"] }}</li>
+       </ul>
+       
+
+     </div>
    </div>
  </template>
 

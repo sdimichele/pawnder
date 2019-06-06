@@ -24,99 +24,31 @@
  img.index-recipes-img {
    width: 250px;
  }
+
  </style>
 
  <script>
- // var axios = require('axios');
+ var axios = require('axios');
+
  export default {
    data: function() {
      
      return {
-       animals: [
-        {
-            "id": 120,
-            "organization_id": "NJ333",
-            "url": "https://www.petfinder.com/dog/spot-120/nj/jersey-city/nj333-petfinder-test-account/?referrer_id=d7e3700b-2e07-11e9-b3f3-0800275f82b1",
-            "type": "Dog",
-            "species": "Dog",
-            "breeds": {
-                "primary": "Akita",
-                "secondary": null,
-                "mixed": false,
-                "unknown": false
-            },
-            "colors": {
-                "primary": null,
-                "secondary": null,
-                "tertiary": null
-            },
-            "age": "Young",
-            "gender": "Male",
-            "size": "Medium",
-            "coat": null,
-            "attributes": {
-                "spayed_neutered": false,
-                "house_trained": true,
-                "declawed": null,
-                "special_needs": true,
-                "shots_current": false
-            },
-            "environment": {
-                "children": false,
-                "dogs": false,
-                "cats": false
-            },
-            "tags": [
-                "Cute",
-                "Intelligent",
-                "Large",
-                "Playful",
-                "Happy",
-                "Affectionate"
-            ],
-            "name": "Spot",
-            "description": "Spot is an amazing dog",
-            "photos": [
-                {
-                    "small": "http://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=100",
-                    "medium": "http://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=300",
-                    "large": "http://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081&width=600",
-                    "full": "http://photos.petfinder.com/photos/pets/42706540/1/?bust=1546042081"
-                }
-            ],
-            "status": "adoptable",
-            "published_at": "2018-12-22T20:31:32+0000",
-            "contact": {
-                "email": "petfindertechsupport@gmail.com",
-                "phone": "111-333-5555, 222-333-5555, 333-333-5353, 111-333-2222",
-                "address": {
-                    "address1": "Test address 1",
-                    "address2": "Test address 2",
-                    "city": "Jersey City",
-                    "state": "NJ",
-                    "postcode": "07097",
-                    "country": "US"
-                }
-            },
-            "_links": {
-                "self": {
-                    "href": "/v2/animals/120"
-                },
-                "type": {
-                    "href": "/v2/types/dog"
-                },
-                "organization": {
-                    "href": "/v2/organizations/nj333"
-                }
-            }
-        }
-                ]
+       animals: []
      };
    },
+
    created: function() {
-     // axios.get("/api/recipes").then(response => {
-     //   this.recipes = response.data;
-     // });
+
+    axios.get("https://api.petfinder.com/v2/animals?type=dog&location=60610&limit=21&distance=20",
+        {headers: {
+            "Authorization" : "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjE4YzlmZjdkNzNkMDY3YmM4OGIxZGI2YjAxODJlYTNkM2MzZjgzMWI2NDQzMzdhYjA0ODY3NjRmNGM3NzI4NGQ5NzJlZTRkMzNlNjc0YTI5In0.eyJhdWQiOiJwS0o3Rlp3RHVPZldRcFprU2R6RU9rOTZQbE1CYWh4UVRxS0s4NFV4MEd5OU5IcEpJRiIsImp0aSI6IjE4YzlmZjdkNzNkMDY3YmM4OGIxZGI2YjAxODJlYTNkM2MzZjgzMWI2NDQzMzdhYjA0ODY3NjRmNGM3NzI4NGQ5NzJlZTRkMzNlNjc0YTI5IiwiaWF0IjoxNTU5ODU2OTYzLCJuYmYiOjE1NTk4NTY5NjMsImV4cCI6MTU1OTg2MDU2Mywic3ViIjoiIiwic2NvcGVzIjpbXX0.d2GIdsWGzfQUgGyK9r4Vy-r3l56THPGQs0V2sYQE3cbpcz6a_18MhyO74HtpcC7688pCs1RkrnMSfXqtNZkdnC_e0CmPg8k8jG8Kbx-CTXYdlEqdEP0cNiengkHCJ5Yzf8pvuAPBSPg_bER4TA7PDLLpYHoReNNxQRsH_WQE44XClTELPrhG_b_6L6Ie_0cQjdXcjfNkCl8Qt6Spz8nKkbdntRJqjM82pOY9DZr5zpw4gcJSXpQzZXklfrpvpmHCejGN2iq2QTXI4j4CfbeFZpJ_g3vWl9LchZbdAZKBYuGptOHuFA41mlnjgmfaSPr88R0PLuCVyEpbXI1ykEWHnw"}
+        }
+    ).then(response => {
+        console.log(response.data);
+        this.animals = response.data.animals;
+        console.log(this.animals);
+     });
    },
    methods: {}
  };

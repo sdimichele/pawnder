@@ -10,6 +10,6 @@
 
 <style>
 body {
-  background-image: url('/circles-and-roundabouts.png');
+  background-image: url('/pink.jpg');
 }
 </style>

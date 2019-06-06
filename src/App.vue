@@ -9,7 +9,9 @@
 </template>
 
 <style>
+
 body {
-  background-image: url('/pink.jpg');
+  background-image: url('/pink_bonez.jpg');
 }
+
 </style>

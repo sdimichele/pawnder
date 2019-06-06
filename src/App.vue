@@ -11,7 +11,7 @@
 <style>
 
 body {
-  background-image: url('/pink_bonez.jpg');
+  /*background-image: url('/pink_bonez.jpg');*/
 }
 
 </style>

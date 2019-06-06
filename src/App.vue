@@ -9,7 +9,9 @@
 </template>
 
 <style>
+
 body {
-  background-image: url('/circles-and-roundabouts.png');
+  background-image: url('/pink_bonez.jpg');
 }
+
 </style>

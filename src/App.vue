@@ -9,10 +9,9 @@
 </template>
 
 <style>
+
 body {
   background-image: url('/pink_bonez.jpg');
 }
-</style>
 
-git remote add origin https://github.com/sdimichele/pawnder.git
-git push -u origin master
+</style>

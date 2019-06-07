@@ -14,8 +14,7 @@
        <ul>
          <li>Personality traits: {{ animal["tags"] }}</li>
        </ul>  
-         <li>Type: {{ animal["age"] }}</li>
-       
+         <li>Type: {{ animal["age"] }}</li>       
 
      </div>
    </div>

@@ -1,4 +1,5 @@
 <template>
+
   <div class="animals-index">
     <div class="container">
       
@@ -30,6 +31,15 @@
 </template>
 
 <style>
+<<<<<<< HEAD
+  .card-img-top {
+    max-height: 400px;
+  }
+
+ .card {
+  text-align: center;
+  height: 850px;
+=======
   .image-top-spacer {
     height: 340px;
     overflow: hidden;
@@ -53,12 +63,16 @@
   text-align: center;
   font-size: 13px;
 
+>>>>>>> 0765d6d57d236e5e35f4c4b17565f671688dc7e8
  }
 
  .page-title {
   text-align: center;
+<<<<<<< HEAD
+=======
   font-size: 45px;
 
+>>>>>>> 0765d6d57d236e5e35f4c4b17565f671688dc7e8
   color: gold;
  }
 
@@ -77,7 +91,11 @@
 
    created: function() {
 
+<<<<<<< HEAD
+    axios.get('https://api.petfinder.com/v2/animals?type=dog&location=' + this.$route.params.zip + '&limit=21&distance=20',
+=======
     axios.get("https://api.petfinder.com/v2/animals?type=dog&location=60202&limit=21&distance=20",
+>>>>>>> 0765d6d57d236e5e35f4c4b17565f671688dc7e8
         {headers: {
             "Authorization" : "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjdkYjYwMjJiYjU4MDcxYTY3ZGJlMTM5NDgwZjM1YTljMzcyM2FjZDFmNzNkNzU2NzRjNmFiN2M1NjdiZDhiZGQxM2Q3MDU1NTExOTcxZDY4In0.eyJhdWQiOiJwS0o3Rlp3RHVPZldRcFprU2R6RU9rOTZQbE1CYWh4UVRxS0s4NFV4MEd5OU5IcEpJRiIsImp0aSI6IjdkYjYwMjJiYjU4MDcxYTY3ZGJlMTM5NDgwZjM1YTljMzcyM2FjZDFmNzNkNzU2NzRjNmFiN2M1NjdiZDhiZGQxM2Q3MDU1NTExOTcxZDY4IiwiaWF0IjoxNTU5OTQwOTU0LCJuYmYiOjE1NTk5NDA5NTQsImV4cCI6MTU1OTk0NDU1NCwic3ViIjoiIiwic2NvcGVzIjpbXX0.mQXqeDWOKBxAy8NGZo6Qvutxmx8OIFh7YiX5OvEUYd61b1NpoJL3G9EMQg3SG3F0r-Ug2i3-I1Sjb9F2VgO87ZQPd8R8yaMG24CnW159cjfhO0rPo0YLk9E7zIC26XDuepjYCrzyDo3P7v_XgjLZZL0SMxpYl-tRmlYbh5vwIZlEFJhMHfA8zS3r23dBurAsSZhXiVNMRWKeSHSEB31QgP7f4Z22AIOgfrXIZTmULfqPlOIB3XZV1Ky9jeO2yFUzd8wkM4s1xWVZCHrs_7hXS1AaU92ETHVWkUg0tNOfLbd1WngxGe6hlJOeMJtpF08fhY-m5gBveFdsJLYK3p2u7Q"}
         }
@@ -90,6 +108,9 @@
    methods: {}
  };
  </script>
+<<<<<<< HEAD
+
+=======
  <!--    {
             "id": 120,
             "organization_id": "NJ333",
@@ -167,3 +188,4 @@
                 }
             }animals:
         } -->
+>>>>>>> 0765d6d57d236e5e35f4c4b17565f671688dc7e8

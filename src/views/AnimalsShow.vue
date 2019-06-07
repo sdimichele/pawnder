@@ -1,3 +1,4 @@
+
 <template>
    <div class="animals-show">
      <h1>Animal</h1>

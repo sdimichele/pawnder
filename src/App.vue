@@ -11,7 +11,8 @@
 <style>
 
 body {
-  /*background-image: url('/pink_bonez.jpg');*/
+  background-image: url('/pink_bonez.jpg');
+  background-image: url('https://cdn.hipwallpaper.com/i/67/85/YetDNi.jpg');
 }
 
 </style>

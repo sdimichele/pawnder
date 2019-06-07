@@ -10,10 +10,8 @@ export default new Router({
   mode: 'history',
   base: process.env.BASE_URL,
   routes: [
-    { path: '/', name: 'animals-index', component: AnimalsIndex },
-
+    { path: '/animals', name: 'animals-all', component: AnimalsAll },
     { path: '/animals/zip/:zip', name: 'animals-all', component: AnimalsAll },
-
     { path: '/animals/:id', name: 'animals-show', component: AnimalsShow }
   ]
 })

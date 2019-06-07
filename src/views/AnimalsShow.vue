@@ -1,8 +1,7 @@
+
 <template>
    <div class="animals-show">
     <div class="container">
-    
-
          <div class="row mt-5">
         <div class="col-md-5 offset-4">
          <div class="card border-dark mb-5">
@@ -28,7 +27,6 @@
   </div>
 </template>
 
-    
 
 <style>
   .card-img-top {

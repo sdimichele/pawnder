@@ -18,13 +18,15 @@
 </template>
 
 <style>
-  /*jumbotron {
-    text-align: center;
-  }*/
 
-  /*.zip-search {
+  .jumbotron {
+    text-align: center;
+  }
+
+  .zip-search {
     margin: 20px 500px;
-  }*/
+  }
+
 </style>
 
 <script>

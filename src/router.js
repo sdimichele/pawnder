@@ -11,7 +11,9 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     { path: '/', name: 'animals-index', component: AnimalsIndex },
-    { path: '/animals/:zip', name: 'animals-all', component: AnimalsAll },
+
+    { path: '/animals/zip/:zip', name: 'animals-all', component: AnimalsAll },
+
     { path: '/animals/:id', name: 'animals-show', component: AnimalsShow }
   ]
 })
